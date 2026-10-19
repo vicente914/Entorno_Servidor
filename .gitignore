@@ -3,5 +3,5 @@ docker/certs/
 .env
 *.pem
 *.key
-
+.idea/
 .vscode/

@@ -11,7 +11,10 @@
 
         //metodos
         public function calcularCosto(){
-            $envioEstandar = new EnvioEstandar();
+            $envioEstandar = new EnvioEstandar($this->peso, $this->distancia);
+            $tarifaEstandar = $envioEstandar->calcularCosto();
+            $cargo_urgencia = 10.0;
+            return $tarifaEstandar + $cargo_urgencia;
         }
 
     }

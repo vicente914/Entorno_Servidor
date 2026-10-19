@@ -10,7 +10,7 @@
         }
 
         //metodos
-        public function calcular_tarifa(){
+        public function calcularCosto(){
             $costo_base = 20.0;
             $costo_por_peso = $this->peso * 5.0;
             $costo_por_distancia = ($this->distancia > 500)? $this->distancia*0.1 : 0.0;
