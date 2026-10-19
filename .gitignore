@@ -1,0 +1,7 @@
+vendor/
+docker/certs/
+.env
+*.pem
+*.key
+
+.vscode/
