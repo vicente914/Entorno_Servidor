@@ -6,6 +6,8 @@
     $urlImg = 'assets/img/';
 ?>
 
+    <h2><?= $titulo ?></h2>
+
 <?php if(!is_dir($dirImg)): ?>
 
     <p>No tenemos imágenes (carpeta 'assets/img' no encontrada).</p>
@@ -16,14 +18,14 @@
 
 <?php else: ?>
 
-    <p>Cartas mostradas: <? count($cartas)?></p>
+    <p>Cartas mostradas: <?=  count($cartas)?> </p>
 
     <?php foreach($cartas as $carta): ?>
         <?php $nombreImagen = $carta->getNombreImagen();?>
 
         <?php if(is_file($dirImg . $nombreImagen)): ?>
             <img src="<?= $urlImg . $nombreImagen?>"
-                alt="Carta: <?$carta?>"
+                alt="Carta: <?= $carta ?>"
                 width="100"
             >
         <?php else: ?>
