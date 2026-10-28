@@ -1,0 +1,8 @@
+vendor/
+docker/certs/
+.env
+*.pem
+*.key
+.idea/
+.vscode/
+projects/FPDF
