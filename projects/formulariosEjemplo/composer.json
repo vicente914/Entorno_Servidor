@@ -1,5 +1,5 @@
 {
-    "name": "clase/ejemplosFormularios",
+    "name": "clase/formulariosEjemplo",
     "type": "project",
     "autoload": {
         "psr-4": {
