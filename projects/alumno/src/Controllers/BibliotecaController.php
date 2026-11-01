@@ -1,5 +1,7 @@
 <?php
 
+namespace Controllers;
+
 use Lib\Pages;
 use Models\Autor;
 use Models\AutorRepositorio;
@@ -23,7 +25,7 @@ class BibliotecaController{
     }
 
     //Lista de libros con y su autor
-    public function librosConAutor(): void{
+    public function libros(): void{
         $libros = $this->librosRepo->obtenerTodos();
         $datos =[];
         
@@ -35,8 +37,8 @@ class BibliotecaController{
         $this->pagina->render('biblioteca/libros', ['datos' => $datos]);
     }
 
-    //Detalles del libro
 
+    //Detalles del libro
     public function libro(): void{
         $id = (int)($_GET['id'] ?? 0);
         $libro = $this->librosRepo->obtenerPorId($id);
