@@ -1,3 +1,3 @@
 <?php
-    define('CONTROLLER_DEFAULT', 'Alumno');
-    define('ACTION_DEFAULT', 'procesar');
+    define('CONTROLLER_DEFAULT', 'Persona');
+    define('ACTION_DEFAULT', 'formulario');

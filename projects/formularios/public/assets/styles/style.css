@@ -1,0 +1,122 @@
+/* Importamos una fuente moderna de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reseteo básico y fondo degradado */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(104, 15, 104);
+    color: #333;
+}
+
+/* La tarjeta del formulario */
+.login-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #4b134f;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Etiquetas (Labels) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Campos de texto (Inputs) */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 5px; /* Reducido para que el error quede cerca */
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al hacer clic en el input */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #8e2de2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(142, 45, 226, 0.3);
+}
+
+/* Mensajes de error */
+.error {
+    display: block;
+    color: #d93025;
+    font-size: 12px;
+    margin-bottom: 15px; /* Separación con el siguiente campo */
+    font-weight: 500;
+}
+
+/* Botón de enviar */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #8e2de2 0%, #4b134f 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 10px;
+}
+
+/* Efecto hover del botón */
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(142, 45, 226, 0.4);
+}
+
+/* Ajuste de los párrafos del formulario */
+form p {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Estilo para la pantalla de éxito (respuestaForm) */
+.success-message {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+}
+
+.success-message h1 {
+    color: #8e2de2;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    color: #666;
+}
