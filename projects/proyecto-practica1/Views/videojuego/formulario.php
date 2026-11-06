@@ -1,6 +1,6 @@
 <h2>Datos videojuego</h2>
 
-<form action="index.php?" method="POST">
+<form action="index.php?action=procesar" method="POST">
     <p>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">
